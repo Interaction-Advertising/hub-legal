@@ -2,15 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
-    <!-- Ensures proper scaling on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>User Data Deletion - Interaction Hub</title>
-
-    <!-- Internal CSS for layout and styling -->
+    <title>User Data Deletion - Meta App</title>
     <style>
-        /* Base styles for the entire page */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -18,34 +12,26 @@
             background-color: #f9f9f9;
             color: #333;
         }
-
-        /* Central container for content */
         .container {
             max-width: 800px;
-            margin: 5% auto; /* Centers the container vertically and horizontally */
+            margin: 5% auto;
             padding: 2rem;
             background-color: #fff;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
         h1 {
             color: #2c3e50;
         }
-
         p {
             line-height: 1.6;
         }
-
-        /* Inline code styling for subject line */
         code {
             background-color: #eef;
             padding: 0.2rem 0.4rem;
             border-radius: 4px;
             font-family: monospace;
         }
-
-        /* Responsive adjustments for smaller screens */
         @media (max-width: 600px) {
             .container {
                 margin: 2% auto;
@@ -55,21 +41,29 @@
     </style>
 </head>
 <body>
-    <!-- Main content block -->
     <div class="container">
         <h1>User Data Deletion Request</h1>
 
-        <!-- Instructions for users to request data deletion -->
-        <p>If you would like to delete your data from the Interaction Hub app, please follow the instructions below:</p>
-        
+        <!-- Meta-specific instructions for users -->
+        <p>If you wish to delete your data associated with our Meta (Facebook) app, please follow the steps below:</p>
+
         <ol>
-            <li>Send an email to <a href="mailto:ian@interactionadv.com">ian@interactionadv.com</a></li>
-            <li>Use the subject line: <code>Delete Data</code></li>
-            <li>Include your <strong>User ID</strong> in the body of the email</li>
+            <li>Go to your Facebook account settings.</li>
+            <li>Navigate to <strong>Apps and Websites</strong>.</li>
+            <li>Find and remove the app: <strong>Interaction Hub</strong>.</li>
+            <li>After removal, Facebook will send a signed request to our server to initiate data deletion.</li>
         </ol>
 
+        <!-- Optional manual fallback -->
+        <p>If you prefer to request deletion manually, you may also:</p>
+        <ul>
+            <li>Send an email to <a href="mailto:ian@interactionadv.com">ian@interactionadv.com</a></li>
+            <li>Use the subject line: <code>Delete My Facebook App Data</code></li>
+            <li>Include your <strong>App-Scoped User ID (ASID)</strong> in the message</li>
+        </ul>
+
         <!-- Legal and compliance note -->
-        <p>Once we receive your request, we will process the deletion of your data in accordance with our privacy policy and applicable regulations.</p>
+        <p>We will process your request in accordance with Meta’s Platform Terms and applicable privacy regulations. You will receive a confirmation code and a status URL once deletion is initiated.</p>
     </div>
 </body>
 </html>
